@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблиці</title>
+</head>
+<body>
+    <h2>Лабораторна робота №1 </h2>
+    <h2>Виконав студент групи КН-32 Курей Н. С.</h2>
+    <a href = "index.html">На головну...</a>
+
+    <h3>Завдання</h3>
+    <p>Необхідно розробити форму для введення інформації про виставу.
+        Необхідно заповнити наступні данні:<br>
+        • дані про виставу, включають назву вистави, жанр(вибирається зі списку),
+        дата вистави, час вистави, опис вистави, картинку з афішою;<br>
+        • дані про квиток, включають тип розміщення (вибирається зі списку,
+        наприклад, партер, ложа бенуар, балкон і т.п.), номер місця, вартість квитка.</p>
+
+    <form action="" method="POST" >
+        <label >Назва вистави:</label>
+        <input type="text" name="назва_вистави"><br>
+
+        <label >Жанр:</label>
+        <select name="жанр">
+            <option>Драма</option>
+            <option>Комедія</option>
+            <option>Мюзикл</option>
+        </select><br>
+
+        <label>Дата вистави:</label>
+        <input type="date" name="дата_вистави"><br>
+
+        <label>Час вистави:</label>
+        <input type="time" name="час_вистави"><br>
+
+        <label>Опис вистави:</label>
+        <textarea name="опис_вистави" rows="4" cols="50"></textarea><br>
+
+        <label>Картинка з афішою:</label>
+        <input type="file" name="картинка" accept="image/*"><br>
+
+        <h2>Введіть інформацію про квиток</h2>
+
+        <label>Тип розміщення:</label>
+        <select name="тип_розміщення">
+            <option>Партер</option>
+            <option>Ложа Бенуар</option>
+            <option>Балкон</option>
+        </select><br>
+
+        <label>Номер місця:</label>
+        <input name="номер_місця" type="number" min="1" max="180"><br>
+
+        <label>Вартість квитка:</label>
+        <input name="вартість_квитка" type="number"  min="0"><br>
+    </form>
+    <button type="submit"> submit</button>
+</body>
+</html>
